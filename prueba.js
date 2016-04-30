@@ -3,15 +3,14 @@ var express = require('express');
 var app = express();
 
 app.set('views', __dirname +'/views');
-
 app.set('view engine', 'jade');
 
 app.use(express.static('public'));
-
 app.get('/', function(req, res){
-  var pregunta = [{titulo:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, nobis.", tags:"electronica", respuestas: "2", fecha: "asked 28 secs ago"}]
-
+    var pregunta = [
+        {titulo:"Ayuda en javascript, AJAX no devuelve data.", tags:"javascript, aax", respuestas: "2", fecha: "hace 2 horas"},
+        {titulo:"Renderizar javascript en Jade con Express JS.", tags:"nodejs, express, jade", respuestas: "1", fecha: "ayer"}
+    ];
     res.render('problemas', { lista : pregunta});
-  })
-
-app.listen(3000);
+})
+app.listen(4000);
