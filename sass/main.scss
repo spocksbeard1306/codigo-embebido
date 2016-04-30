@@ -1,0 +1,52 @@
+.banner {
+	background: url(../images/banner1.jpg);
+	background-size: cover;
+}
+
+.text-banner {
+	padding: 5% 13% 9% 11%;
+	h1 {
+		color: #FD0000;
+		font-size: 6em;
+		font-weight: bold;
+		span{
+			color: white;
+		}
+	}
+	p {
+		font-size: 2em;
+		color: white;
+	 	font-weight: bold;
+	}
+}
+
+.nav-wrapper{
+	background-color: #FD0000;
+}
+
+.opaco{
+	width: 100%;
+	background: black;
+	opacity: 0.7;
+}
+
+.waves-light{
+	margin: 14px;
+	padding: 0 10px;
+	background-color: #FD0000;
+}
+
+.waves-light:hover{
+	background-color: black;
+}
+
+.vista-general{
+	.vista-previa{
+		width: 600px;
+		height: 109px;
+		border-bottom: 1px solid #e4e6e8;
+	}
+	small{
+		margin:5px;
+	}
+}
