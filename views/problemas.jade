@@ -8,10 +8,10 @@ html
     each pregunta in lista
       .container
         .row
-          .col.s12
+          .col.s9
             h5.blue-text.text-darken-2 #{pregunta.titulo}
             a(href) #{pregunta.tags}
-          .col.s2
+          .col.s3
             p.right-align #{pregunta.respuestas}
             h6.right-align respuestas 
             p.right-align #{pregunta.fecha}
