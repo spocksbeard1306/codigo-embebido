@@ -5,8 +5,8 @@ var questSchema = new Schema({
     title: String,
     user: {type: Schema.Types.ObjectId, ref: 'User'},
     body: String,
-    tags:[String],
-    answers: [{type: Schema.Types.ObjecId, ref: 'Answer'}],
+    tags: [String],
+    answers: [{type: Schema.Types.ObjectId, ref: 'Answer'}],
     comments: [{type: Schema.Types.ObjectId, ref: 'Comment'}],
     date: Date
 });
