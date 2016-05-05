@@ -8,7 +8,8 @@ var questSchema = require('./schemas/quest-sc.js');
 module.exports = {
     User: mongoose.model('User', userSchema),
     Comment: mongoose.model('Comment', commentSchema),
-    AnsComment: mongoose.model('Comment',AnsCommentSchema),
+    AnsComment: mongoose.model('AnsComment',AnsCommentSchema),
     Answer: mongoose.model('Answer', answerSchema),
     Quest: mongoose.model('Quest', questSchema)
 };
+
