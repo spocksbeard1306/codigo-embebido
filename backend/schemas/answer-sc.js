@@ -3,7 +3,8 @@ var Schema = mongoose.Schema;
 
 var answerSchema = new Schema({
     body: String,
-    user: {type: Schema.Types.ObjectId, ref: 'User'},
+    _user: {type: Schema.Types.ObjectId, ref: 'User'},
+    _question: {type: Schema.Types.ObjectId, ref: 'Quest'},
     comments: [{type: Schema.Types.ObjectId, ref: 'Comment'}],
     date: Date
 });

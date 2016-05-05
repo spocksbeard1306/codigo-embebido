@@ -1,11 +1,11 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var commentSchema = new Schema({
+var ansCommentSchema = new Schema({
     _user: {type: Schema.Types.ObjectId, ref: 'User'},
-    _question: {type: Schema.Types.ObjectId, ref: 'Quest'},
+    _answer: {type: Schema.Type.ObjectId, ref: 'Answer'},
     body: String,
     date: Date
 });
 
-module.exports = commentSchema;
+module.exports = ansCommentSchema;
