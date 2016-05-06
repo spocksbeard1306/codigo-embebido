@@ -1,75 +1,88 @@
-meta(charset = 'UTF-8')
-meta(name = "viewport" content = "width=device-width, initial-scale=1.0")
-title Foro MakerLab
-link(rel = 'icon', type = "image/png", href = "images/logo-maker.jpg")
-link(rel = 'stylesheet', type = 'text/css', href = 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css')
-link(rel = 'stylesheet', type = 'text/css', href = 'stylesheets/main.css')
-header
-	section.banner
-		nav
-			.nav-wrapper
-				ul#nav-mobile.right.hide-on-med-and-down
-					li
-						a(href = "#") Login with Facebook
-					li
-						a(href = "#") HTML
-		.opaco
-			.text-banner.text-center
-				h1 Maker
-					span Lab
-				p El Rincón de Preguntas y Respuestas
-	.center-align
-		a(class = "waves-effect waves-light btn" href = "#") Pregunta aquí!
-	section.ultimas-preguntas
-		.container
-			.row
-				.col.s10
-					h5 Últimas Preguntas
-					.vista-general
-						.vista-previa
-							
-							h5
-								a  Ayuda en javascript, AJAX no devuelve data..
-							.pie
-								.nube-tags
-									.chip
-										|Javascript
-									.chip
-										|Ajax
-									.chip
-										img(src = "images/elvis-face.jpg")
-										| Elvis	
-									small 9 respuestas
-									small Publicado fecha
-									small Resuelto/Sin resolver
+doctype
+html
+	head
+		meta(charset = 'UTF-8')
+		meta(name = "viewport" content = "width=device-width, initial-scale=1.0")
+		title Foro MakerLab
+		link(rel = 'icon', type = "image/png", href = "images/logo-maker.jpg")
+		link(rel = 'stylesheet', type = 'text/css', href = 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css')
+		link(rel = 'stylesheet', href = 'https://fonts.googleapis.com/icon?family=Material+Icons')
+		link(rel = 'stylesheet', type = 'text/css', href = 'css/main.css')
+	body
+		section.banner
+			nav
+				.nav-wrapper
+					ul#nav-mobile.right.hide-on-med-and-down
+						li
+							a(href = "#") Login with Facebook
+						li
+							a(href = "#") HTML
+			.opaco
+				.text-banner.text-center
+					h1 Maker
+						span Lab
+					p El Rincón de Preguntas y Respuestas
+		.center-align
+			a(class = "waves-effect waves-light btn" href = "#") Pregunta aquí!
+		section.ultimas-preguntas
+			.container
+				.row
+					.col.s10
+						h5 Últimas Preguntas
+						.vista-general
+							.vista-previa
 								
-						.vista-previa
-							
-							h5
-								a Renderizar javascript en Jade con Express JS.
-							.pie
-								.nube-tags
-									.chip
-										|Tag 1
-									.chip
-										|Tag 2
-									.chip
-										img(src = "images/elvis-face.jpg")
-										| Elvis	
-									small 9 respuestas
-									small Publicado fecha
-									small Resuelto/Sin resolver
+								h5
+									a(href="#")  Ayuda en javascript, AJAX no devuelve data..
+								.pie
+									.nube-tags
+										.chip
+											|Javascript
+										.chip
+											|Ajax
+										.chip
+											img(src = "public/images/elvis-face.jpg")
+											| Elvis	
+										small 9 respuestas
+										small Publicado fecha
+										small Resuelto/Sin resolver
+									
+							.vista-previa
 								
+								h5
+									a(href="#") Renderizar javascript en Jade con Express JS.
+								.pie
+									.nube-tags
+										.chip
+											|Tag 1
+										.chip
+											|Tag 2
+										.chip
+											img(src = "public/images/elvis-face.jpg")
+											| Elvis	
+										small 9 respuestas
+										small Publicado fecha
+										small Resuelto/Sin resolver
+									
 
-					ul.pagination
-						li.disabled
-							a(href = "#")
-								i.material-icons 
-						li.active
-							a(href = "#") 1
-						li.waves-effect
-							a(href = "#") 2
-						li.waves-effect
-							a(href = "") 3
-						li.waves-effect
-							a(href = "#") 4
+						ul.pagination
+							li.disabled
+								a(href = "#")
+									i.material-icons chevron_left
+							li.active
+								a(href = "#") 1
+							li.waves-effect
+								a(href = "#") 2
+							li.waves-effect
+								a(href = "") 3
+							li.waves-effect
+								a(href = "#") 4
+							li.waves-effect
+								a(href = "#")
+									i.material-icons chevron_right
+					.col.s2
+						form
+							label Filtrar contenido
+							input(placeholder="Palabra clave" id="filtro" type="text" class="validate")
+							button(class="btn waves-effect waves-light" type="submit" name="action") Filtrar
+								i.material-icons.right send

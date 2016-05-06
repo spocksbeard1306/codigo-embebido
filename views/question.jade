@@ -1,0 +1,62 @@
+doctype
+html
+	head
+		meta(charset = 'UTF-8')
+		meta(name = "viewport" content = "width=device-width, initial-scale=1.0")
+		title Foro MakerLab
+		link(rel = 'icon', type = "image/png", href = "images/logo-maker.jpg")
+		link(rel = 'stylesheet', type = 'text/css', href = 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css')
+		link(rel = 'stylesheet', href = 'https://fonts.googleapis.com/icon?family=Material+Icons')
+		link(rel = 'stylesheet', type = 'text/css', href = 'css/main.css')
+	body.bg-question
+		.container
+			section.question.bg-white
+				h2 Login devise en modal form
+				p ¿Como puedo hacer para que los formularios de login y registro de devise se desplieguen en una ventana modal (popup)?, obviamente ocupando bootstrap.
+				i.small.material-icons.center-align code
+				h3 2 Respuestas
+				.answer
+					.row.align-left
+						.col.s2
+							.imagen
+								img(src="public/images/pedro-face.jpg" class="circle responsive-img")
+						.col.s10
+							h4 Un objeto no definido
+							h5 Pedro
+							p Hola! Consultando un poco sobre el error "Call to a member function on a non-object" encontré que hace referencia a cuando se pretende acceder a métodos o atributos de un objeto no inicializado, algo así como el error de puntero nulo de java. Analizando el código, el error puede estar en el archivo Estudiante.php ya que no se está inicializando el atributo $con, que es el que contiene el método consultaRetorno(), que está relacionado en el error. Creo que le hace falta colocar el constructor de la clase Estudiante, e inicializar la conexión.
+							input(href="form-control" type="text" name="answer" placeholder="Responder")
+							button(class="btn waves-effect waves-light" type="submit")
+								|Responder
+								i.material-icons.right send
+							.comment
+								.row.alig-left
+									.col.s2
+										img(src="public/images/geny-face.jpg" class="circle responsive-img")
+									.col.s10
+										h5 Geny
+										p Encontre la Respuesta amigo , el error se encontraba en mi HTML , pues la instruccion para agregar el .js lo colocaba antes del entonces la solucion es primero dejar que cargue el html , ya que de lo contrario mi getElemnt.... no encuentra nada porque aun no carga nada
+							.comment
+								.row.alig-left
+									.col.s2
+										img(src="public/images/elvis-face.jpg" class="circle responsive-img")
+									.col.s10
+										h5 Elvis
+										p Me alegro de que lo hayas solucionado. Saludos
+				.answer
+					.row.align-left
+						.col.s2
+							.imagen
+								img(src="public/images/paty-face.jpg" class="circle responsive-img")
+						.col.s10
+							h5 Paty
+							p Cargué el javascript antes del cierre del body, para que no "entrampe" la carga del html en el navegador. No lo leas!
+							input(href="form-control" type="text" name="answer" placeholder="Responder")
+							button(class="btn waves-effect waves-light" type="submit")
+								|Responder
+								i.material-icons.right send
+				i.material-icons.left comment
+				h5 Escribe aquí tu respuesta
+				input(placeholder="Título de tu respuesta" type="text")
+				textarea(placeholder="Escribe aquí tu respuesta" type="text")
+				button(class="btn waves-effect waves-light" type="submit")
+					|Enviar

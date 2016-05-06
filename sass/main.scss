@@ -1,5 +1,8 @@
+$rojo-maker:#FD0000;
+$bg-tapiz-question:#F5F5F5;
+
 .banner {
-	background: url(../images/banner1.jpg);
+	background: url(../public/images/banner1.jpg);
 	background-size: cover;
 }
 
@@ -21,7 +24,7 @@
 }
 
 .nav-wrapper{
-	background-color: #FD0000;
+	background-color: $rojo-maker;
 }
 
 .opaco{
@@ -33,7 +36,6 @@
 .waves-light{
 	margin: 14px;
 	padding: 0 10px;
-	background-color: #FD0000;
 }
 
 .waves-light:hover{
@@ -49,4 +51,51 @@
 	small{
 		margin:5px;
 	}
+}
+
+/*QUESTION*/
+.bg-question{
+	background-color: $bg-tapiz-question;
+}
+
+.bg-white{
+	background-color: white;
+}
+
+.question{
+	padding: 35px;
+	h2{
+		font-size: 35px;
+		color: #EF5350;
+	}
+	p{
+		font-size: 18px;
+		text-align: justify;
+	}
+	h3{
+		font-size: 28px;
+		color: #697D8B;
+	}
+	.answer{
+		h5{
+			color: #697D8B;
+		}
+
+		.comment{
+			background-color: #ECF5F7;
+			margin-top: 20px;
+			padding: 14px;
+		}
+
+	}
+
+	textarea{
+		height: 170px;
+	}
+
+	.waves-light {
+		  margin: 4px 0;
+		  padding: 0px 10px;
+		  background-color: #EF5350;
+		}
 }
