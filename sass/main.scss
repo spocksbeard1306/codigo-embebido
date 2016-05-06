@@ -24,7 +24,7 @@ $bg-tapiz-question:#F5F5F5;
 }
 
 .nav-wrapper{
-	background-color: $rojo-maker;
+	background-color: #EF5350;
 }
 
 .opaco{
@@ -36,6 +36,7 @@ $bg-tapiz-question:#F5F5F5;
 .waves-light{
 	margin: 14px;
 	padding: 0 10px;
+	background-color: #EF5350;
 }
 
 .waves-light:hover{
@@ -89,13 +90,30 @@ $bg-tapiz-question:#F5F5F5;
 
 	}
 
-	textarea{
-		height: 170px;
-	}
-
 	.waves-light {
 		  margin: 4px 0;
 		  padding: 0px 10px;
 		  background-color: #EF5350;
 		}
 }
+
+/*FOOTER*/
+footer{
+	padding: 0 14px;
+	color: white;
+	background-color: black;
+	img{
+		height: 50px;
+		width: 50px;
+	}
+}
+
+/*NEW QUESTION*/
+.waves-light{
+	margin: 14px 0;
+}
+
+textarea{
+		height: 170px;
+	}
+

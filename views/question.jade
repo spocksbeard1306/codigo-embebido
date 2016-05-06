@@ -11,9 +11,11 @@ html
 	body.bg-question
 		.container
 			section.question.bg-white
+				a(href="new.html" class="btn waves-effect waves-light" type="submit")
+					i.material-icons.left mode_edit
+					|Nueva Pregunta
 				h2 Login devise en modal form
 				p ¿Como puedo hacer para que los formularios de login y registro de devise se desplieguen en una ventana modal (popup)?, obviamente ocupando bootstrap.
-				i.small.material-icons.center-align code
 				h3 2 Respuestas
 				.answer
 					.row.align-left
@@ -50,7 +52,7 @@ html
 						.col.s10
 							h5 Paty
 							p Cargué el javascript antes del cierre del body, para que no "entrampe" la carga del html en el navegador. No lo leas!
-							input(href="form-control" type="text" name="answer" placeholder="Responder")
+							input(type="text" name="answer" placeholder="Responder")
 							button(class="btn waves-effect waves-light" type="submit")
 								|Responder
 								i.material-icons.right send
@@ -60,3 +62,4 @@ html
 				textarea(placeholder="Escribe aquí tu respuesta" type="text")
 				button(class="btn waves-effect waves-light" type="submit")
 					|Enviar
+		include footer
