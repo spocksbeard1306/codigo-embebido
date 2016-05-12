@@ -1,0 +1,12 @@
+{
+  "styles": {
+    "build": "public/stylesheets",
+    "sass":{
+      "src": "sass",
+      "extname": "scss",
+      "includePaths": [
+        "node_modules/materialize-css/sass"
+      ]
+    }
+  }
+}
