@@ -57,6 +57,10 @@ $bg-tapiz-question:#F5F5F5;
 /*QUESTION*/
 .bg-question{
 	background-color: $bg-tapiz-question;
+	.circle.responsive-img{
+		width: 100px;
+		height: 100px;
+	}
 }
 
 .bg-white{
@@ -86,6 +90,10 @@ $bg-tapiz-question:#F5F5F5;
 			background-color: #ECF5F7;
 			margin-top: 20px;
 			padding: 14px;
+			.circle.responsive-img{
+				width: 70px;
+				height: 70px;
+			}
 		}
 
 	}
