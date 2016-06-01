@@ -36,8 +36,8 @@
   height: 109px;
   border-bottom: 1px solid #e4e6e8; }
 
-.vista-general small {
-  margin: 5px; }
+small {
+  margin: 7px; }
 
 /*QUESTION*/
 .bg-question {
@@ -89,3 +89,5 @@ footer {
 
 textarea {
   height: 170px; }
+
+/*# sourceMappingURL=main.css.map */

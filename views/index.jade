@@ -30,39 +30,24 @@ html
 					.col.s10
 						h5 Últimas Preguntas
 						.vista-general
+						each pregunta in lista
 							.vista-previa
 								
 								h5
-									a(href="question.html")  Ayuda en javascript, AJAX no devuelve data..
+									a(href="question.html")  #{pregunta.titulo}
 								.pie
 									.nube-tags
 										.chip
-											|Javascript
-										.chip
-											|Ajax
-										.chip
 											img(src = "images/elvis-face.jpg")
-											| Elvis	
-										small 9 respuestas
-										small Publicado fecha
-										small Resuelto/Sin resolver
-									
-							.vista-previa
-								
-								h5
-									a(href="question.html") Renderizar javascript en Jade con Express JS.
-								.pie
-									.nube-tags
-										.chip
-											|Tag 1
-										.chip
-											|Tag 2
-										.chip
-											img(src = "images/elvis-face.jpg")
-											| Elvis	
-										small 9 respuestas
-										small Publicado fecha
-										small Resuelto/Sin resolver
+											| Elvis
+										strong
+											small Etiquetas:
+												|#{pregunta.tags}
+											
+										small #{pregunta.respuestas}
+											|respuestas
+										small #{pregunta.fecha}
+										small #{pregunta.estado}
 									
 
 						ul.pagination
