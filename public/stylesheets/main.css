@@ -31,10 +31,14 @@
 .waves-light:hover {
   background-color: black; }
 
-.vista-general .vista-previa {
+.vista-previa {
   width: 600px;
   height: 109px;
-  border-bottom: 1px solid #e4e6e8; }
+  border-bottom: 1px solid #e4e6e8;
+  margin-top: 28px; }
+
+.pagination {
+  margin-top: 14%; }
 
 small {
   margin: 7px; }
@@ -89,5 +93,3 @@ footer {
 
 textarea {
   height: 170px; }
-
-/*# sourceMappingURL=main.css.map */

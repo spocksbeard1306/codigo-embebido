@@ -15,6 +15,7 @@ html
 					i.material-icons.left mode_edit
 					|Nueva Pregunta
 				h2 Login devise en modal form
+				h3 Elvis#[small(class="fecha right-align") preguntó el 19/07/16]
 				p ¿Como puedo hacer para que los formularios de login y registro de devise se desplieguen en una ventana modal (popup)?, obviamente ocupando bootstrap.
 				h3 2 Respuestas
 				.answer
@@ -24,11 +25,11 @@ html
 								img(src="images/pedro-face.jpg" class="circle responsive-img")
 						.col.s10
 							h4 Un objeto no definido
-							h5 Pedro
+							h5 Pedro#[small(class="fecha right-align") respondió el 20/07/16]
 							p Hola! Consultando un poco sobre el error "Call to a member function on a non-object" encontré que hace referencia a cuando se pretende acceder a métodos o atributos de un objeto no inicializado, algo así como el error de puntero nulo de java. Analizando el código, el error puede estar en el archivo Estudiante.php ya que no se está inicializando el atributo $con, que es el que contiene el método consultaRetorno(), que está relacionado en el error. Creo que le hace falta colocar el constructor de la clase Estudiante, e inicializar la conexión.
-							input(href="form-control" type="text" name="answer" placeholder="Responder")
+							input(href="form-control" type="text" name="answer" placeholder="Haz un comentario")
 							button(class="btn waves-effect waves-light" type="submit")
-								|Responder
+								|Comentar
 								i.material-icons.right send
 							.comment
 								.row.alig-left
@@ -50,11 +51,11 @@ html
 							.imagen
 								img(src="images/paty-face.jpg" class="circle responsive-img")
 						.col.s10
-							h5 Paty
+							h5 Paty#[small(class="fecha right-align") respondió el 20/07/16]
 							p Cargué el javascript antes del cierre del body, para que no "entrampe" la carga del html en el navegador. No lo leas!
-							input(type="text" name="answer" placeholder="Responder")
+							input(type="text" name="answer" placeholder="Haz un comentario")
 							button(class="btn waves-effect waves-light" type="submit")
-								|Responder
+								|Comentar
 								i.material-icons.right send
 				i.material-icons.left comment
 				h5 Escribe aquí tu respuesta

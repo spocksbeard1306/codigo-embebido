@@ -11,8 +11,9 @@ html
 	body.bg-question
 		.container
 			h2 Nueva Pregunta
-			input(type="text" placeholder="Título")
-			textarea(placeholder="Escribe aquí tu pregunta" type="text")
-			a(href="new.html" class="btn waves-effect waves-light")
-				|Enviar
-				i.material-icons.right send
+			form(method="post", action="/index")
+				input(type="text" name="title" placeholder="Título")
+				textarea(placeholder="Escribe aquí tu pregunta" type="text")
+				a(href="new.html" class="btn waves-effect waves-light")
+					|Enviar
+					i.material-icons.right send
